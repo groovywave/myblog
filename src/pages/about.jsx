@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { GatsbyImageFixedProps, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 

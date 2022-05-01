@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
