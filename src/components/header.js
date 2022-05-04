@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+//import { faHouseMedicalCircleXmark } from "@fortawesome/free-solid-svg-icons"
 
-export default () => (
+const Header = () => (
   <header className="header">
     <div className="container">
       <div className="site">
@@ -29,3 +30,5 @@ export default () => (
     </div>
   </header>
 )
+
+export default Header;

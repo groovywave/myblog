@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 
@@ -9,7 +9,7 @@ import { faUtensils, faCheckSquare } from "@fortawesome/free-solid-svg-icons"
 
 import Seo from "../components/seo"
 
-export default ({ data, location }) => (
+const About =  ({ data, location }) => (
   <Layout>
     <Seo
       pagetitle="ESSENTIALS について"
@@ -22,7 +22,7 @@ export default ({ data, location }) => (
     <div className="eyecatch">
       <figure>
       <GatsbyImage
-          image={getImage(data.about.childImageSharp.eyecatch)}
+          image={data.about.childImageSharp.gatsbyImageData}
           alt="ブルーベリー＆ヨーグルト"
         />
       </figure>
@@ -70,7 +70,7 @@ export const query = graphql`
   query {
     about: file(relativePath: { eq: "about.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+        gatsbyImageData(layout: FULL_WIDTH)
         original {
           src
           height
@@ -80,3 +80,5 @@ export const query = graphql`
     }
   }
 `
+
+export default About;

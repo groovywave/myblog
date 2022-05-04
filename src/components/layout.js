@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./header"
-import Footer from "./footer"
+import Header from "../components/header"
+import Footer from "../components/footer"
 import "./layout.css"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import {config} from "@fortawesome/fontawesome-svg-core"
 config.autoAddCss = false
 
-export default ({children}) => {
+const Layout =  ({children}) => {
     return (
         <div>
             <Header />
@@ -17,3 +17,5 @@ export default ({children}) => {
         </div>
     )
 }
+
+export default Layout;
