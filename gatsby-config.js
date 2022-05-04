@@ -16,6 +16,7 @@ module.exports = {
     fbappid: `360203250666702`,
   },
   plugins: [
+    'gatsby-plugin-netlify'
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
